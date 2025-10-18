@@ -31,7 +31,7 @@
 % Пакет позволяет включать рисунки различных форматов
 \RequirePackage{graphicx}
 % Пакет для набора простых коммутативных диаграмм. Я обычно использую более продвинутый xy
-\RequirePackage{amscd}                
+\RequirePackage{amscd}
 \RequirePackage{multirow}
 % Очень мощный пакет для рисования различных диаграмм. Я подключаю из него только матрицы, стрелки и кривые.
 \RequirePackage[matrix,arrow,curve]{xy}
@@ -44,7 +44,8 @@
 \RequirePackage{enumitem}
 
 % Этот пакет позволяет делать активные цветные гиперссылки.
-\RequirePackage[colorlinks=true, urlcolor=blue]{hyperref}
+\RequirePackage[colorlinks=true, allcolors=blue, breaklinks=true]{hyperref}
+\usepackage[anythingbreaks]{breakurl}
 
 % Это пакет для печати кода в документе
 \RequirePackage{listings}
@@ -52,3 +53,13 @@
 \RequirePackage{code_cpp}
 \RequirePackage{code_python}
 
+% times new roman
+\usepackage{mathptmx}
+\linespread{1.3}
+
+\usepackage{float}
+\usepackage{svg}
+\usepackage{subfig}
+
+\usepackage{listings,chngcntr}
+\lstset{frame=Trbl,numbers=left}

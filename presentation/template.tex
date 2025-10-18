@@ -1,0 +1,83 @@
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[english,russian]{babel}
+
+\usetheme{Madrid}
+\usecolortheme{default}
+
+\usepackage{dejavu}
+
+%------------------------------------------------------------
+%This block of code defines the information to appear in the
+%Title page
+\title[Короткий заголовок] %optional
+{Длинный заголовок}
+
+\subtitle{Магистерская диссертация}
+
+\author[Иванов Иван] % (optional)
+{\small Иванов Иван, МСКН241\\
+	\text{}\\
+Научный руководитель: \\
+должность, \\
+место работы,\\
+ФИО}
+
+\institute[ВШЭ] % (optional)
+{
+  Современные Компьютерные Науки\\
+	ФКН НИУ ВШЭ (Москва)
+}
+
+\date[Июнь 2026] % (optional)
+{Июнь 2026}
+
+%End of title page configuration block
+%------------------------------------------------------------
+
+
+
+%------------------------------------------------------------
+%The next block of commands puts the table of contents at the
+%beginning of each section and highlights the current section:
+
+\AtBeginSection[]
+{
+	\begin{frame}
+		\frametitle{Содержание}
+		\tableofcontents[currentsection]
+	\end{frame}
+}
+%------------------------------------------------------------
+
+\newcommand{\pl}{\item[\textcolor{green}{+}]}
+\newcommand{\mi}{\item[\textcolor{red}{$-$}]}
+
+\usepackage{graphicx,caption}
+
+\newcommand*{\myurl}[1]{%
+\href{#1}{\color{blue}{\underline{\detokenize{#1}}}}}
+
+
+\begin{document}
+
+	%The next statement creates the title page.
+	\frame{\titlepage}
+
+
+	%---------------------------------------------------------
+	%This block of code is for the table of contents after
+	%the title page
+	\begin{frame}
+		\frametitle{Содержание}
+		\tableofcontents
+	\end{frame}
+	%---------------------------------------------------------
+
+
+\section{Введение в предметную область}
+\section{Детали реализации}
+\section{Тестирование и результаты}
+
+\end{document}
